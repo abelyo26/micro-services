@@ -15,7 +15,7 @@ class ServiceRegistry {
    * @param {Object} options registry options
    * @memberof ServiceRegistry
    */
-  constructor(options) {
+  constructor(options = {}) {
     if (is.not.undefined(options) && is.not.object(options))
       throw new Error("invalid options");
 
