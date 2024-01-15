@@ -153,13 +153,13 @@ class ServiceRegistry {
     this._redis.QUIT();
     this._logger.info("service registry is down");
   }
+  
   /**
    * @description checks if a service exists and updates it
    * @param {String} service name
    * @param {String | Number} target address
    * @returns Promise
    */
-
   _ifExistUpdate(service, target) {
     return new Promise(async (resolve, reject) => {
       try {
