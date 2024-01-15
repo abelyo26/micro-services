@@ -9,6 +9,7 @@ const redis = require("redis");
  * @class ServiceRegistry
  */
 class ServiceRegistry {
+  
   /**
    *Creates an instance of ServiceRegistry.
    * @param {Object} redis redis instance
@@ -76,6 +77,7 @@ class ServiceRegistry {
       }
     });
   }
+  
   /**
    * @description returns a random instance by service
    * @param {String} service name
@@ -145,6 +147,7 @@ class ServiceRegistry {
       }
     });
   }
+  
   /**
    * @description stops service registry
    * @memberof ServiceRegistry
